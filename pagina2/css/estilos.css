@@ -1,0 +1,273 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #fff;
+    font-family:'lato';
+    font-size: 16px;
+}
+
+.contenedor{
+    width: 100%;
+    max-width: 1000px;
+    overflow: hidden;
+    margin:auto;
+}
+
+header{
+    background-image: url('../img/electronica.jpg');
+    height:500px;
+    
+    background-repeat: no-repeat;
+    background-position:center;
+    background-attachment: cover;
+    background-size: cover;
+}
+header .menu{
+    margin:10px 0;
+    display:flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    position:fixed;
+    z-index: 20;
+    background: rgba(95, 241, 108, 0.383);
+    
+}
+header .menu a:hover{
+    text-decoration: underline;
+    text-align: right;
+}
+header .menu a{
+    font-size:18px;
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 300;
+    display: inline-block;
+    padding:5px 0;
+    margin:0 15px;
+    color:black;
+    text-decoration: none;
+    
+}
+header .contenido-header{
+    margin:120px 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+header .contenido-header .titulo-header{
+    font-size: 120px;
+    text-align: center;
+    color: rgba(9, 28, 133, 0.849);
+    text-align: center;
+    font-family: 'Source Code Pro', monospace;
+}
+
+header .contenido-header .linea-header{
+    width: 700px;
+    margin: auto;
+    height:2px;
+    background: #15a4fa;
+    margin-bottom:30px;
+    text-align: center;
+}
+
+header .contenido-header .texto-header{
+    color:#ffff;
+    font-weight: 300;
+    margin-bottom:50px;
+    font-size:25px;
+    text-align: center;
+    font-style: inherit;
+    font-family: 'Source Code Pro', monospace;
+    
+    background: rgba(24, 53, 218, 0.856);
+}
+
+
+.portafolio{
+    background: #f0f3f5;
+    padding: 60px 0;
+}
+
+.portafolio .portafolio-textos{
+    text-align: center;
+    margin-bottom: 60px;
+    color:#2d3950;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 20px;
+    padding-left: 100px;
+    
+}
+
+.portafolio .flotante h1{
+    font-family:'Source Code Pro', monospace;
+    font-size: 20px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    color: #0a8a20;
+
+}
+
+.portafolio .contenedor .titulo-contenedor{
+
+    font-family:'Source Code Pro', monospace;
+    text-align: center;
+    padding-left: 150px;
+
+
+}
+ .portafolio .contenedor .tabla{
+
+    width: 1000px;
+    border: 0;
+
+}
+.portafolio .contenedor .tabla .estilo-tabla{
+
+    font-family:'Source Code Pro', monospace;
+    font-size: 12px;
+    line-height: 14px;
+    color:black;
+    vertical-align: top;
+}
+ .portafolio .contenedor .tabla .formato-tabla{
+    margin-left: 20px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+
+.oficial {
+    font-family:'Source Code Pro', monospace;
+    text-align: center;
+
+}
+.oficial .tabla {
+
+
+    padding:  10px 280px 0 ;
+}
+
+footer{
+    background-image:url('../img/contacto-electronica.jpg') ;
+    padding: 20px 0 30px 0;
+    margin: auto;
+    overflow: hidden;
+    
+}
+
+footer .titulo-footer h1{
+
+    font-family:'Source Code Pro', monospace;
+    text-align: center;
+    padding-top: -50px;
+    color: #fff;
+    
+
+}
+
+.contenedor-footer{
+
+    display: flex;
+    width: 90%;
+    justify-content:space-evenly;
+    background: rgba(24, 53, 218, 0.733);
+    margin: auto;
+    page-break-after: 50px;
+    border-bottom: 1px solid #f2f2f2 ;
+   
+}
+
+.contenedor-footer2 h4{
+    text-align: center;
+    color: #fff;
+    border-bottom: 3px solid #0a8a20;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    font-family: 'Cabin', sans-serif;
+    
+}
+
+.contenedor-footer2 p{
+    color: #fff;
+    font-family: 'Cabin', sans-serif;
+    text-align: center;
+    
+}
+
+.titulo-final{
+    text-align: center;
+    font-size: 24px;
+    margin: 20px 0 0 0;
+    color: #f2f2f2;
+    background: rgba(24, 53, 218, 0.733);
+    font-family: 'Source Code Pro', monospace;
+}
+
+@media screen and (max-width:760px){
+    header .menu{
+        justify-content: center;
+    }
+    header .contenido-header .texto-header{
+       font-size:18px;
+    }
+    header .contenido-header .texto-header .desaparecer{
+        display: none;
+    }
+}
+
+@media screen and (max-width:630px){
+    header .contenido-header .titulo-header{
+        font-size:80px;
+    }
+    header .contenido-header .linea-header{
+        width: 400px;
+    }
+    main .portafolio .galeria .fotos{
+        width:49%;
+    }
+}
+
+@media screen and (max-width: 500px){
+    header .contenido-header .titulo-header{
+        font-size:40px;
+    }
+ 
+}
+
+@media screen and (max-width: 350px){
+    
+    header .contenido-header .texto-header{
+        font-size:15px;
+    }
+}
+@media screen and (max-width: 600px) {
+    table {
+        width:100%;
+    }
+    thead {
+        display: none;
+    }
+    tr:nth-of-type(2n) {
+        background-color: inherit;
+    }
+    tr td:first-child {
+        background: #f0f0f0;
+        font-weight:bold;
+        font-size:1.3em;
+    }
+    tbody td {
+        display: block;
+        text-align:center;
+    }
+    tbody td:before {
+        content: attr(data-th);
+        display: block;
+        text-align:center;
+    }
+}
